@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="text-center">
+  <h2>Welcome to your Expense Dashboard</h2>
+  <a class="btn btn-primary mt-4" href="{{ url_for('expense_list') }}">View Expenses</a>
+  <a class="btn btn-secondary mt-4" href="{{ url_for('login') }}">Logout</a>
+</div>
+{% endblock %}
